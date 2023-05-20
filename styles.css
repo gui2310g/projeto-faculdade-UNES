@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --background-color1: #fff;
+    font-family: 'Open sans', sans-serif;
+}
+
+/* cabeçalho */
+
+
+header {
+    height: 100px;
+    background-color: var(--background-color1);
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    padding: 20px;
+}
+
+
+header img {
+    margin-left: 16%;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 5px; 
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* imagem e Imagem 2 */
+
+section{
+    height: 90vh;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1) {
+    background-image: url(imagens/capa.jpg);   
+}
+
+section:nth-of-type(2) {
+    background-image: url(imagens/formatura.jpg); 
+}
+
+section:nth-of-type(3) {
+    background-image: url(imagens/atendimento.jpg); 
+}
+
+section h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/*artigo*/
+
+article {
+    text-align: center;
+    margin: 5em;
+}
+
+article h2 {
+    margin: 30px;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 5px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#formulario {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+form label {
+    display: block;
+    padding: 1%;
+}
+
+footer {
+    padding-top: 25px;
+    text-align: center;
+    height: 70px;
+    background-color: aliceblue;
+}
+
+
+  @media screen and (max-width: 768px) {
+    header img {
+        margin-left: 2%;
+    }
+  
+    header nav {
+        margin-right: -15%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    header img {
+        margin-left: 2%;
+        width: 200px;
+    }
+  
+    header nav {
+        margin-right: -22%;
+        padding: -2px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-top: -30px;
+        padding: 12px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    article p {
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    #formulario {
+        text-align: left;
+        margin-left: 20%;
+        margin-right: auto;
+        
+    }
+
+    
+  }
